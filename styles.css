@@ -223,3 +223,26 @@ header a:hover {
   display: grid;
   gap: 1.5rem;
 }
+
+article {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+}
+
+article > div:first-child {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+  letter-spacing: -.01em;
+}
+ 
+article p {
+  color: var(--muted);
+  font-size: .925rem;
+  margin-bottom: .6rem;
+  max-width: 700px;
+}
