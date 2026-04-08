@@ -93,3 +93,26 @@ nav ul li a {
 nav ul li a:hover { 
   color: var(--accent); 
 }
+
+/* Header */
+header {
+  padding: 5rem 2rem 4rem;
+  border-bottom: 1px solid var(--border);
+}
+ 
+header > div {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+ 
+header p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+ 
+header a:hover { 
+  background: var(--accent-dim); 
+  color: #0d0d0d; 
+}
+ 
