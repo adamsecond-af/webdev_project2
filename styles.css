@@ -116,3 +116,62 @@ header a:hover {
   color: #0d0d0d; 
 }
  
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  border: none;
+  padding: 0;
+}
+
+.card ul li {
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 0.2rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.card ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.card p,
+.card figcaption {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.card figure {
+  margin-top: 1rem;
+}
+
+.card figure img,
+.card figure video {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 0.5rem;
+}
