@@ -9,6 +9,9 @@
   --sans: 'DM Sans', sans-serif;
   --display: 'Syne', sans-serif;
   --radius: 6px;
+  --border:    #2a2a2a;
+  --nav-h:     60px;
+  --muted:     #7a7570;
 }
 
 /* Design */
@@ -49,4 +52,44 @@ h4 {
   font-family: var(--display);
   font-weight: 700;
   line-height: 1.2;
+}
+
+/* Nav */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(13,13,13,.85);
+  border-bottom: 1px solid var(--border);
+  height: var(--nav-h);
+}
+ 
+nav > div {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+nav span {
+  font-family: var(--display);
+  font-weight: 800;
+  color: var(--text);
+}
+ 
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+ 
+nav ul li a {
+  font-weight: 500;
+  color: var(--muted);
+}
+ 
+nav ul li a:hover { 
+  color: var(--accent); 
 }
