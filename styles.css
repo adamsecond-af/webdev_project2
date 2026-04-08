@@ -217,3 +217,9 @@ header a:hover {
   border-radius: 3px;
   transition: border-color .2s, color .2s;
 }
+
+/* Topics  */
+.articles-grid {
+  display: grid;
+  gap: 1.5rem;
+}
